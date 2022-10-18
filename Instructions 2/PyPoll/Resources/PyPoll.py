@@ -37,7 +37,8 @@ with open(csvpath) as csvfile:
     for individual in candidate:
         if maxVotes < candidate[individual]:
             maxVotes = candidate[individual]
-    
+            winner = individual
+   
 
         
 
@@ -56,6 +57,6 @@ for key,value in candidate.items():
 #print(f'Diana DeGette: {percentage_of_vote}')
 #print(f'Raymon Anthony Doane: {total_number_of_vote}')
 print("--------------------------")
-print(f'Winner: {maxVotes}')
+print(f'Winner: {winner}')
 print("--------------------------")
 
